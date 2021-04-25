@@ -177,3 +177,109 @@ background: #B4D1E0 url(../img/slide-image-1.png) no-repeat top right 25%;
 .card-text.large{
   max-width: 320px;
 }
+
+.section-title {
+font-size: 25px;
+line-height: 30px;
+color: #262D33;
+font-family: 'Roboto Slab', serif;
+}
+.more{
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262D33;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.goods-card{
+  position: relative;
+  text-align: center;
+  padding: 30px 36px 35px 36px;
+
+}
+
+.goods-card .bestseller-lable{
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
+
+.goods-title{
+font-size: 16px;
+line-height: 25px;
+color: #262D33;
+font-family: 'Roboto Slab',
+serif;
+margin-top: 15px;
+margin-bottom: 5px;
+}
+
+.goods-description{
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.goods-price{
+  font-size: 18px;
+  line-height: 30px;
+  color: #262D33;
+  font-weight: 900;
+}
+
+.footer{
+  background: #8F79D4;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+.footer-menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu-item:not(:last-child){
+  margin-right: 40px;
+}
+
+.footer-menu-link{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-social-link{
+margin-left: 15px;
+}
+
+.footer-text{
+  color:#E7D9FF;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-line{
+  opacity: 0.5;
+}
+
+.top-link{
+  text-decoration: none;
+  color:white;
+}
+.top-link-text{
+margin-right: 15px;
+}
+
+.payment-icon{
+  margin-right: 25px;
+  vertical-align: center;
+}
+
+.payment-block{
+  min-width: 400px;
+}
