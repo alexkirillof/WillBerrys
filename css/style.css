@@ -43,10 +43,14 @@ body{
    display: flex;
    align-items:center;
    cursor: pointer;
+   text-decoration: none;
+   display: inline-block;
+
 }
 
 .button-icon, .button-prise{
   margin-right: 10px;
+  
 }
 
 .button-icon:last-child{
@@ -60,8 +64,13 @@ body{
 }
 
 .slide-1{
-  background-color: #B4D1E0;
+  background: #95beca url(../img/slide-image-1.png) no-repeat top right 25%;
+  min-height: 570px;
   
+}
+.slide-2 {
+  background: #adca95 url(../img/slide-image-1.png) no-repeat top right 25%;
+min-height: 570px;
 }
 .bestseller-lable{
   background-color: #3DC47E;
@@ -88,9 +97,9 @@ color: #4B5157;
 max-width: 335px;
 margin-bottom: 40px;
 }
-.slide-1{
+/* .slide{
 background: #B4D1E0 url(../img/slide-image-1.png) no-repeat top right 25%;
-}
+} */
 
 .slider{
   position: relative;
@@ -101,6 +110,7 @@ background: #B4D1E0 url(../img/slide-image-1.png) no-repeat top right 25%;
   top:50%;
   width: 100%;
   transform: translateY(-50%);
+  z-index: 9;
 }
 .slider-button{
   background-color:transparent;
@@ -132,7 +142,7 @@ background: #B4D1E0 url(../img/slide-image-1.png) no-repeat top right 25%;
 .card-4 {
   margin-top: 30px;
   background: #FF4F52 url(../img/card-img-4.png) no-repeat top right 40%;
-  background-size: cover;
+  background-size: contain;
   padding-left: 25px;
   padding-right: 30px;
 }
@@ -197,7 +207,8 @@ font-family: 'Roboto Slab', serif;
   position: relative;
   text-align: center;
   padding: 30px 36px 35px 36px;
-
+  text-decoration: none;
+  display: block;
 }
 
 .goods-card .bestseller-lable{
@@ -282,4 +293,38 @@ margin-right: 15px;
 
 .payment-block{
   min-width: 400px;
+}
+
+@media (max-width:1200px){
+.slide-1, .slide-2 {
+  background-size:cover;
+ }
+ .card-3{
+   background-size:cover;
+ }
+  .card-4 {
+    background-position: right top;
+  }
+}
+
+@media (max-width:992px) {
+  .slider-nav{
+    display:none;
+  }
+}
+
+@media(max-width:576px){
+.slide-title{
+  font-size: 36px;
+  line-height: 1.4;
+  margin: 0;
+}
+.card{
+  background-position: left top;
+  padding: 30px;
+  min-height:300px;
+}
+ .card-4 {
+   background-position: right top;
+ }
 }
